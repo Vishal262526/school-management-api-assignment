@@ -7,6 +7,6 @@ const {
 } = require("./../controllers/schoolController");
 
 router.post("/addSchool", addSchoolController);
-router.get("/getSchool", getNearSchoolsController);
+router.get("/listSchools", getNearSchoolsController);
 
 module.exports = router;
