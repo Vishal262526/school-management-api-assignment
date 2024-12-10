@@ -4,6 +4,7 @@ const { config } = require("dotenv");
 config();
 
 const db = mysql.createConnection({
+  port: process.env.DB_PORT || 25184,
   host: process.env.DB_HOST || "localhost", // Replace with your MySQL host
   user: process.env.DB_USER || "root", // Replace with your MySQL username
   password: process.env.DB_PASSWORD || "root", // Replace with your MySQL password
